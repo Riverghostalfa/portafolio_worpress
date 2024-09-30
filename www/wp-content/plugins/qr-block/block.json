@@ -1,0 +1,51 @@
+{
+	"apiVersion": "2",	
+	"name": "wphackers/qr-block",
+	"title": "QR",
+	"category": "widgets",
+	"description": "Create a QR code.",
+	"supports": {
+		"html": false,
+		"align": true,
+		"media-manager/color": {
+			"code": {
+				"label": "Code color",
+				"style": "none"
+			},
+			"background": {
+				"label": "Background color",
+				"style": "none"
+			},
+			"__contrastChecker": [ "code", "background" ],
+			"__sectionTitle": "Color"
+		}
+	},
+	"attributes": {
+		"type": {
+			"type": "string",
+			"default": "generic"
+		},
+		"value": {
+			"type": "string",
+			"default": "Say Hello to the fantastic QRBlock. Review me! ⭐️⭐️⭐️⭐️⭐️ https://wordpress.org/support/plugin/qr-block/reviews/#new-post"
+		},
+		"size": {
+			"type": "integer",
+			"default": 200
+		},
+		"level": {
+			"type": "string",
+			"default": "L"
+		},
+		"codeHEXColor": {
+			"type": "string"
+		},
+		"bgHEXColor": {
+			"type": "string"
+		}
+	},
+	"textdomain": "qr-block",
+	"editorScript": "file:./assets/index.js",
+	"editorStyle": "file:./assets/index.css",
+	"style": "file:./assets/style-index.css"
+}
